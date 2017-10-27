@@ -1,0 +1,40 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pago Efectivo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="NOFOLLOW, NOINDEX">
+        <link rel="stylesheet" href="lib_pagoefectivo/css/estilos.css" type="text/css" />
+        <link rel="stylesheet" href="tools/css/style.css" type="text/css" />
+        <script type="text/javascript" src="lib_pagoefectivo/js/jquery.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <div id="main">
+      <div id="content" class="bootstrap">
+        <!-- MENU -->
+        <div class="bootstrap">
+	        <nav id="nav-sidebar" role="navigation">
+                <img src="~/lib_pagoefectivo/images/logo_pagoefectivo_112x52.jpg" style="padding: 0 0 0 20%" alt="Pago Efectivo" title="Pago Efectivo" runat="server" />
+		        <ul class="menu">
+    		        <li class="maintab"><a href="GenerarCip.aspx" class="title" runat="server"><i class="icon-AdminCatalog"></i><span>Generar Cip</span></a></li>
+                    <li class="maintab"><a href="NotificacionCip.aspx" class="title" runat="server"><i class="icon-AdminCatalog"></i><span>Notificación Cip</span></a></li>
+			        <li class="maintab"><a href="ConsultarCip.aspx" class="title" runat="server"><i class="icon-AdminCatalog"></i><span>Consultar Cip</span></a></li>
+                    <li class="maintab"><a href="EliminarCip.aspx" class="title" runat="server"><i class="icon-AdminCatalog"></i><span>Eliminar Cip</span></a></li>
+                    <li class="maintab"><a href="ActualizarCip.aspx" class="title" runat="server"><i class="icon-AdminCatalog"></i><span>Actualizar Cip</span></a></li>
+		        </ul>
+	        </nav>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+  </div>
+</body>
+</html>
